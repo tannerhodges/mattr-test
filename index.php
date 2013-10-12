@@ -37,7 +37,7 @@
                 <!-- Header -->
                 <header>
                     <h1>Mattr</h1>
-                    <nav>
+                    <nav id="main-navigation">
                         <ul>
                             <li><a href="javascript:void(0);">Blog</a></li>
                             <li><a href="javascript:void(0);">Sign In</a></li>
@@ -45,19 +45,21 @@
                     </nav>
                 </header>
 
-                <!-- Sales Pitch -->
-                <h1>Personalities<br />tell powerful stories.</h1>
-                <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
-                <p>
-                    Get To know your audience.<br />
-                    Request a private beta invitation:
-                </p>
+                <!-- Call to Action -->
+                <div id="call-to-action">
+                    <h1>Personalities<br />tell powerful stories.</h1>
+                    <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
+                    <p>
+                        Get To know your audience.<br />
+                        Request a private beta invitation:
+                    </p>
 
-                <!-- Email Signup -->
-                <form action="">
-                    <input type="email" placeholder="your@email.com" />
-                    <button type="submit">Submit</button>
-                </form>
+                    <!-- Email Signup -->
+                    <form action="">
+                        <input type="email" placeholder="your@email.com" />
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
         </section>
 

@@ -17,6 +17,7 @@
 ----------------------------------------------------------------------- */
 $max-width: 980px;				// The max width of the page content (Guess-timated from original PSD)
 
+
 /* Colors
 ----------------------------------------------------------------------- */
 // Background colors
@@ -78,6 +79,7 @@ html, body {
 	color: $font-color-01;
 }
 
+
 /* Link styles
 ----------------------------------------------------------------------- */
 a {
@@ -88,21 +90,48 @@ a {
 	}
 }
 
+
+/* Header
+----------------------------------------------------------------------- */
+header {
+	position: relative;
+}
+
+
+/* Navigation
+----------------------------------------------------------------------- */
+#main-navigation {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	ul {
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+
 /* Hero
 ----------------------------------------------------------------------- */
 .hero {
 	background: $bg-color-03 url('../img/hero-bg.jpg') top center no-repeat;
 	background-size: cover;		// Set size to cover to fill entire width of the page
 	color: $font-color-02;
-}
 
-/* Header
------------------------------------------------------------------------ */
-header {
 	h1 {
 		margin: 0;							// Remove margins from headings in the header (fixes offset from the top of the page)
 	}
 }
+
+
+/* Call to Action
+----------------------------------------------------------------------- */
+#call-to-action {
+	text-align: center;
+}
+
 
 /* Main Content
 ----------------------------------------------------------------------- */
@@ -117,8 +146,7 @@ header {
 		MISCELLANEOUS
 ======================================================================= */
 
-/* Prompt to show for outdated browsers
------------------------------------------------------------------------ */
+// Prompt to show for outdated browsers
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;

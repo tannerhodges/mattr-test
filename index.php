@@ -26,35 +26,39 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Header -->
-        <header class="wrap">
-            <h1>Mattr</h1>
-            <nav>
-                <ul>
-                    <li><a href="javascript:void(0);">Blog</a></li>
-                    <li><a href="javascript:void(0);">Sign In</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <!-- Sticky Navigation -->
         <div class="sticky-nav wrap">
             <a href="javascript:void(0);">Request an Invitation</a>
         </div>
 
         <!-- Hero Section -->
-        <section class="hero wrap">
-            <h1>Personalities<br />tell powerful stories.</h1>
-            <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
-            <p>
-                Get To know your audience.<br />
-                Request a private beta invitation:
-            </p>
-            <!-- Email Signup -->
-            <form action="">
-                <input type="email" placeholder="your@email.com" />
-                <button type="submit">Submit</button>
-            </form>
+        <section class="hero">
+            <div class="wrap">
+                <!-- Header -->
+                <header>
+                    <h1>Mattr</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="javascript:void(0);">Blog</a></li>
+                            <li><a href="javascript:void(0);">Sign In</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- Sales Pitch -->
+                <h1>Personalities<br />tell powerful stories.</h1>
+                <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
+                <p>
+                    Get To know your audience.<br />
+                    Request a private beta invitation:
+                </p>
+
+                <!-- Email Signup -->
+                <form action="">
+                    <input type="email" placeholder="your@email.com" />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </section>
 
         <!-- Main Content -->

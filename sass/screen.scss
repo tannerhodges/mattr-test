@@ -4,16 +4,34 @@
  * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 // Import additional CSS
-@import "compass/reset";
-@import "normalize";
-@import "h5bp";
+@import "compass/reset";				// Reset styles
+@import "normalize";						// Normalize
+@import "h5bp";									// HTML5 Boilerplate
 
 
 /* =======================================================================
 		VARIABLES
 ======================================================================= */
 
-$max-width: 980px; // The max width of the page content
+/* Layout
+----------------------------------------------------------------------- */
+$max-width: 980px;				// The max width of the page content (Guess-timated from original PSD)
+
+/* Colors
+----------------------------------------------------------------------- */
+// Background colors
+$bg-color-01: #ececec;		// Gallery Gray
+$bg-color-02: #e2e2e2;		// Mercury Gray
+
+// Font colors
+$font-color-01: #7c7b74;	// Friar Gray
+$font-color-02: #ffffff;	// White
+$font-color-02: #42014e;	// Plum Purple
+$font-color-04: #df0e6b;	// Raspberry Pink
+$font-color-03: #073768;	// Deep Sapphire
+
+// Link colors
+$link-color-01: #416589;	// Bismark Blue
 
 
 
@@ -23,15 +41,15 @@ $max-width: 980px; // The max width of the page content
 
 // Center block elements using margin auto
 @mixin center-block {
-	display: block; // Set display to block
-	margin: 0 auto; // Set margin to 0 (vertical) and auto (horizontal)
+	display: block;					// Set display to block
+	margin: 0 auto;					// Set margin to 0 (vertical) and auto (horizontal)
 }
 
 // Make an element span the full width of the window
 @mixin full-width {
-	@include center-block; // Center the block element
-	width: 100%; // Set width to 100%
-	max-width: $max-width; // Set max-width to predefined value
+	@include center-block;	// Center the block element
+	width: 100%;						// Set width to 100%
+	max-width: $max-width;	// Set max-width to predefined value
 }
 
 
@@ -43,8 +61,46 @@ $max-width: 980px; // The max width of the page content
 /* Content wrapper
 ----------------------------------------------------------------------- */
 .wrap {
-	@include full-width; // Wrap content at the max width of the page
+	@include full-width;		// Wrap content at the max width of the page
 }
+
+
+
+/* =======================================================================
+		PRESENTATION STYLES
+======================================================================= */
+
+/* Global styles
+----------------------------------------------------------------------- */
+html, body {
+	background: $bg-color-01;
+	color: $font-color-01;
+}
+
+/* Link styles
+----------------------------------------------------------------------- */
+a {
+	color: $link-color-01;
+
+	&:hover {
+		// Set hover styles
+	}
+}
+
+/* Header
+----------------------------------------------------------------------- */
+
+
+/* Hero
+----------------------------------------------------------------------- */
+
+
+/* Main Content
+----------------------------------------------------------------------- */
+
+
+/* Footer
+----------------------------------------------------------------------- */
 
 
 

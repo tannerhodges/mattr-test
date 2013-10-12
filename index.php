@@ -20,6 +20,17 @@
         <link href="./css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="./css/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="./css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+        <!-- Typekit Scripts -->
+        <script>
+        (function() {
+        var config = {
+        kitId: 'bud0jkk',
+        scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+        })();
+        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -36,9 +47,9 @@
             <div class="wrap">
                 <!-- Header -->
                 <header>
-                    <h1 class="logo-text ir">
+                    <h1>
                         <a href="javascript:void(0);">
-                            <img src="./img/mattr-logo-text.png" alt="Mattr" title="Mattr" />
+                            <img class="logo-text" src="./img/mattr-logo-text.png" alt="Mattr" title="Mattr" />
                         </a>
                     </h1>
                     <nav id="main-navigation">
@@ -51,11 +62,11 @@
 
                 <!-- Call to Action -->
                 <div id="call-to-action">
-                    <img src="./img/mattr-logo-icon.png" alt="" />
+                    <img class="logo-icon" src="./img/mattr-logo-icon.png" alt="" />
                     <h1>Personalities<br />tell powerful stories.</h1>
-                    <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
-                    <p>
-                        Get To know your audience.<br />
+                    <p class="description">The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
+                    <p class="invite">
+                        Get to know your audience.<br />
                         Request a private beta invitation:
                     </p>
 
@@ -102,45 +113,47 @@
         </div>
 
         <!-- Footer -->
-        <footer class="wrap">
-            <div class="column one-fourth">
-                <h3>San Francisco, CA</h3>
-                <ul>
-                    <li>Rocketspace</li>
-                    <li>181 Fremont Street </li>
-                    <li>San Francisco, California 94105</li>
-                </ul>
-                <a href="javascript:void(0);">EMAIL US</a>
-            </div>
-            <div class="column one-fourth">
-                <h3>Austin, TX</h3>
-                <ul>
-                    <li>8140 North Mopac Expressway</li>
-                    <li>Building 1, Suite 150</li>
-                    <li>Austin, Texas 78759</li>
-                </ul>
-                <a href="javascript:void(0);">EMAIL US</a>
-            </div>
-            <div class="column one-fourth">
-                <h3>Elsewhere</h3>
-                <ul>
-                    <li><a href="javascript:void(0);">Twitter</a></li>
-                    <li><a href="javascript:void(0);">Facebook</a></li>
-                    <li><a href="javascript:void(0);">LinkedIn</a></li>
-                </ul>
-            </div>
-            <div class="column one-fourth last">
-                <h3>Company</h3>
-                <ul>
-                    <li><a href="javascript:void(0);">Sign In</a></li>
-                    <li><a href="javascript:void(0);">Blog</a></li>
-                    <li><a href="javascript:void(0);">FAQ</a></li>
-                </ul>
-            </div>
+        <footer>
+            <div class="wrap">
+                <div class="column one-fourth">
+                    <h3>San Francisco, CA</h3>
+                    <ul>
+                        <li>Rocketspace</li>
+                        <li>181 Fremont Street </li>
+                        <li>San Francisco, California 94105</li>
+                    </ul>
+                    <a href="javascript:void(0);">EMAIL US</a>
+                </div>
+                <div class="column one-fourth">
+                    <h3>Austin, TX</h3>
+                    <ul>
+                        <li>8140 North Mopac Expressway</li>
+                        <li>Building 1, Suite 150</li>
+                        <li>Austin, Texas 78759</li>
+                    </ul>
+                    <a href="javascript:void(0);">EMAIL US</a>
+                </div>
+                <div class="column one-fourth">
+                    <h3>Elsewhere</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Twitter</a></li>
+                        <li><a href="javascript:void(0);">Facebook</a></li>
+                        <li><a href="javascript:void(0);">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="column one-fourth last">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="javascript:void(0);">Sign In</a></li>
+                        <li><a href="javascript:void(0);">Blog</a></li>
+                        <li><a href="javascript:void(0);">FAQ</a></li>
+                    </ul>
+                </div>
 
-            <!-- Copyright -->
-            <div class="copyright">
-                &copy; 2013 MATTR. All rights reserved.
+                <!-- Copyright -->
+                <div class="copyright">
+                    &copy; 2013 MATTR. All rights reserved.
+                </div>
             </div>
         </footer>
 

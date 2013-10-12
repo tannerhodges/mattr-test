@@ -38,7 +38,7 @@
         </header>
 
         <!-- Sticky Navigation -->
-        <div class="sticky-nav" class="wrap">
+        <div class="sticky-nav wrap">
             <a href="javascript:void(0);">Request an Invitation</a>
         </div>
 

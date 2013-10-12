@@ -34,8 +34,6 @@ $max-width: 980px; // The max width of the page content
 	max-width: $max-width; // Set max-width to predefined value
 }
 
-#navbar li { @include rounded-top-left; }
-
 
 
 /* =======================================================================

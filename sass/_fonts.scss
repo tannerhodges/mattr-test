@@ -1,0 +1,59 @@
+/*
+ * Note: To control FOUT (flash of unstyled content) you should add the following classes to control the visibility
+ * of the default font family. .wf-loading and .wf-active
+ */
+
+/* FOUT control
+----------------------------------------------------------------------- */
+.wf-loading {
+    visibility: hidden;
+}
+.wf-active {
+    visibility: visible;
+}
+
+
+/* Fonts
+----------------------------------------------------------------------- */
+/*Adelle Light*/
+@mixin adelle-light {
+    font-family: "adelle",serif;
+    font-style: normal;
+    font-weight: 300;
+}
+/*Adelle Light Italic*/
+@mixin adelle-light-italic {
+    font-family: "adelle",serif;
+    font-style: italic;
+    font-weight: 300;
+}
+/*Proxima Light*/
+@mixin proxima-light {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+/*Proxima Regular*/
+@mixin proxima-regular {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+/*Proxima Semibold*/
+@mixin proxima-semibold {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+/*Proxima Semibold Italic*/
+@mixin proxima-semibold-italic {
+    font-family: "proxima-nova",sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+/*Proxima Bold*/
+@mixin proxima-bold {
+    font-family: "proxima-nova",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}

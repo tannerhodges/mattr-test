@@ -3,11 +3,59 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-// @import "compass/reset";
+// Import additional CSS
+@import "compass/reset";
 @import "normalize";
 @import "h5bp";
 
-/* Prompt to show for outdated browsers */
+
+/* =======================================================================
+		VARIABLES
+======================================================================= */
+
+$max-width: 980px; // The max width of the page content
+
+
+
+/* =======================================================================
+		MIXINS
+======================================================================= */
+
+// Center block elements using margin auto
+@mixin center-block {
+	display: block; // Set display to block
+	margin: 0 auto; // Set margin to 0 (vertical) and auto (horizontal)
+}
+
+// Make an element span the full width of the window
+@mixin full-width {
+	@include center-block; // Center the block element
+	width: 100%; // Set width to 100%
+	max-width: $max-width; // Set max-width to predefined value
+}
+
+#navbar li { @include rounded-top-left; }
+
+
+
+/* =======================================================================
+		LAYOUT
+======================================================================= */
+
+/* Content wrapper
+----------------------------------------------------------------------- */
+.wrap {
+	@include full-width; // Wrap content at the max width of the page
+}
+
+
+
+/* =======================================================================
+		MISCELLANEOUS
+======================================================================= */
+
+/* Prompt to show for outdated browsers
+----------------------------------------------------------------------- */
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;

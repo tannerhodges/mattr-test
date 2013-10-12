@@ -16,6 +16,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <!-- Shortcut Icon -->
+        <link rel="shortcut icon" href="./favicon.ico" />
+
         <!-- Stylesheets -->
         <link href="./css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="./css/print.css" media="screen, projection" rel="stylesheet" type="text/css" />

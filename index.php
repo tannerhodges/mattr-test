@@ -36,7 +36,11 @@
             <div class="wrap">
                 <!-- Header -->
                 <header>
-                    <h1>Mattr</h1>
+                    <h1 class="logo-text ir">
+                        <a href="javascript:void(0);">
+                            <img src="./img/mattr-logo-text.png" alt="Mattr" title="Mattr" />
+                        </a>
+                    </h1>
                     <nav id="main-navigation">
                         <ul>
                             <li><a href="javascript:void(0);">Blog</a></li>
@@ -47,6 +51,7 @@
 
                 <!-- Call to Action -->
                 <div id="call-to-action">
+                    <img src="./img/mattr-logo-icon.png" alt="" />
                     <h1>Personalities<br />tell powerful stories.</h1>
                     <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
                     <p>

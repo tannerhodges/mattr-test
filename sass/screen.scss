@@ -94,7 +94,12 @@ a {
 /* Header
 ----------------------------------------------------------------------- */
 header {
-	position: relative;
+	position: relative;					// Set position to relative so that #main-navigation can use absolute positioning (instead of float)
+}
+
+.logo-text {
+//	Not sure how to get the image replacement to work just yet
+//	background: url('../img/mattr-logo-text.png') center left no-repeat;
 }
 
 

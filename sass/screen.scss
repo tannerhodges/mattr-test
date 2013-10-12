@@ -6,6 +6,7 @@
 @import "compass/reset";							// Reset styles
 @import "compass/css3/border-radius";	// Cross-browser border radius
 @import "compass/css3/images";				// Gradients
+@import "compass/css3/box-sizing";		// Cross-browser box sizing
 
 // Import additional CSS
 @import "normalize";			// Normalize
@@ -80,7 +81,37 @@ $gradient-color-02: #f14082;	// Rose
 /* Content wrapper
 ----------------------------------------------------------------------- */
 .wrap {
+	position: relative;
 	@include full-width;		// Wrap content at the max width of the page
+}
+
+// Remove padding from lists
+menu, ol, ul {
+	padding: 0;
+}
+
+
+/* Columns
+----------------------------------------------------------------------- */
+.column {
+	display: inline-block;						// Keep elements on same line
+	/* Note: inline-block will require you to remove whitespace from in between elements to work properly. */
+	@include box-sizing(border-box);	// Set width to outer border
+	padding: 1em 1em 1em 0;						// Set padding-right to 0
+	overflow: visible;								// Remove excess size data (allows perfect relative values, e.g. 33.333%)
+	vertical-align: top;							// Align content to top
+}
+
+.last {
+	padding: 1em 0 1em 1em;	// Set padding-left to 0
+}
+
+.one-third {
+	width: 33.33333333333333%;
+}
+
+.one-fourth {
+	width: 25%;
 }
 
 
@@ -214,7 +245,7 @@ header {
 
 		input {
 			width: 100%;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			padding: 15px;
 		}
 

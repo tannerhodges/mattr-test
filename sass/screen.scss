@@ -22,13 +22,14 @@ $max-width: 980px;				// The max width of the page content (Guess-timated from o
 // Background colors
 $bg-color-01: #ececec;		// Gallery Gray
 $bg-color-02: #e2e2e2;		// Mercury Gray
+$bg-color-03: #af0253;		// Lipstick Pink
 
 // Font colors
 $font-color-01: #7c7b74;	// Friar Gray
 $font-color-02: #ffffff;	// White
-$font-color-02: #42014e;	// Plum Purple
+$font-color-03: #42014e;	// Plum Purple
 $font-color-04: #df0e6b;	// Raspberry Pink
-$font-color-03: #073768;	// Deep Sapphire
+$font-color-05: #073768;	// Deep Sapphire
 
 // Link colors
 $link-color-01: #416589;	// Bismark Blue
@@ -87,13 +88,21 @@ a {
 	}
 }
 
-/* Header
------------------------------------------------------------------------ */
-
-
 /* Hero
 ----------------------------------------------------------------------- */
+.hero {
+	background: $bg-color-03 url('../img/hero-bg.jpg') top center no-repeat;
+	background-size: cover;		// Set size to cover to fill entire width of the page
+	color: $font-color-02;
+}
 
+/* Header
+----------------------------------------------------------------------- */
+header {
+	h1 {
+		margin: 0;							// Remove margins from headings in the header (fixes offset from the top of the page)
+	}
+}
 
 /* Main Content
 ----------------------------------------------------------------------- */
@@ -115,4 +124,9 @@ a {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
+}
+
+// Temporarily hide stick-nav
+.sticky-nav {
+	display: none;
 }

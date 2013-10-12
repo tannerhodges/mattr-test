@@ -22,7 +22,7 @@
         <![endif]-->
 
         <!-- Header -->
-        <header>
+        <header class="wrap">
             <h1>Mattr</h1>
             <nav>
                 <ul>
@@ -33,12 +33,12 @@
         </header>
 
         <!-- Sticky Navigation -->
-        <div class="sticky-nav">
+        <div class="sticky-nav" class="wrap">
             <a href="javascript:void(0);">Request an Invitation</a>
         </div>
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero wrap">
             <h1>Personalities<br />tell powerful stories.</h1>
             <p>The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
             <p>
@@ -53,7 +53,7 @@
         </section>
 
         <!-- Main Content -->
-        <div class="main-content">
+        <div class="main-content wrap">
             <div class="column one-third">
                 <h2>The App</h2>
                 <p>Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools.  Explore our Features to learn more.</p>
@@ -86,7 +86,7 @@
         </div>
 
         <!-- Footer -->
-        <footer>
+        <footer class="wrap">
             <div class="column one-fourth">
                 <h3>San Francisco, CA</h3>
                 <ul>

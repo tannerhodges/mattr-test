@@ -1,2 +1,5 @@
+# Ignore Photoshop directory
+PSD/
+
 # Ignore SASS cache files
 .sass-cache

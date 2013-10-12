@@ -1,12 +1,16 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
+/* In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+// Import Compass libraries
+@import "compass/reset";							// Reset styles
+@import "compass/css3/border-radius";	// Cross-browser border radius
+@import "compass/css3/images";				// Gradients
+
 // Import additional CSS
-@import "compass/reset";				// Reset styles
-@import "normalize";						// Normalize
-@import "h5bp";									// HTML5 Boilerplate
+@import "normalize";			// Normalize
+@import "h5bp";						// HTML5 Boilerplate
+@import "fonts";					// Custom fonts (e.g, Typekit, etc)
 
 
 /* =======================================================================
@@ -15,8 +19,9 @@
 
 /* Layout
 ----------------------------------------------------------------------- */
-$max-width: 980px;				// The max width of the page content (Guess-timated from original PSD)
-
+$max-width: 980px;						// Max width of the page content (Guess-timated from original PSD)
+$default-border-radius: 2px;	// Default border radius for generator
+$font-size-01: 14px;					// Default font size
 
 /* Colors
 ----------------------------------------------------------------------- */
@@ -34,12 +39,24 @@ $font-color-05: #073768;	// Deep Sapphire
 
 // Link colors
 $link-color-01: #416589;	// Bismark Blue
+$link-color-02: #fb0059;	// Rose
+
+// Gradient colors (for buttons)
+$gradient-color-01: #f7941e;	// Poppy Orange
+$gradient-color-02: #f14082;	// Rose
 
 
 
 /* =======================================================================
 		MIXINS
 ======================================================================= */
+
+// Smooth fonts via browser rendering
+@mixin smooth-fonts {
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
 
 // Center block elements using margin auto
 @mixin center-block {
@@ -76,7 +93,18 @@ $link-color-01: #416589;	// Bismark Blue
 ----------------------------------------------------------------------- */
 html, body {
 	background: $bg-color-01;
+
+	// Font
+	@include smooth-fonts;
+	@include proxima-regular;
+	font-size: $font-size-01;
 	color: $font-color-01;
+}
+
+// Heading font
+h1, h2, h3, h4, h5, h6 {
+	@include adelle-light;
+	color: $font-color-04;
 }
 
 
@@ -84,9 +112,10 @@ html, body {
 ----------------------------------------------------------------------- */
 a {
 	color: $link-color-01;
+	text-decoration: none;
 
 	&:hover {
-		// Set hover styles
+		text-decoration: underline;
 	}
 }
 
@@ -98,6 +127,8 @@ header {
 }
 
 .logo-text {
+	padding: 20px 0 55px 0;
+
 //	Not sure how to get the image replacement to work just yet
 //	background: url('../img/mattr-logo-text.png') center left no-repeat;
 }
@@ -106,13 +137,30 @@ header {
 /* Navigation
 ----------------------------------------------------------------------- */
 #main-navigation {
+	// Position
 	position: absolute;
-	top: 0;
+	top: 12px;
 	right: 0;
 
+	// Font
+	font-size: 0.85714285714286rem;	// 12px / 14px
+	line-height: 1.16666666666667;	// 20px / 12px
+	text-transform: uppercase;
+	font-weight: bold;
+
+	// List styles
 	ul {
 		li {
 			display: inline-block;
+
+			a {
+				padding: 0 1.14285714285714rem;	// 16px / 14px
+				color: $link-color-02;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 }
@@ -127,6 +175,7 @@ header {
 
 	h1 {
 		margin: 0;							// Remove margins from headings in the header (fixes offset from the top of the page)
+		color: $font-color-02;
 	}
 }
 
@@ -134,7 +183,68 @@ header {
 /* Call to Action
 ----------------------------------------------------------------------- */
 #call-to-action {
+	@include center-block;
+	max-width: 480px;
+	padding-bottom: 110px;
 	text-align: center;
+
+	h1 {
+		font-size: 48px;
+		line-height: 0.91666666666667;	// 44px / 48px
+	}
+
+	.description {
+		margin-bottom: 45px;
+	}
+
+	.invite {
+		@include proxima-semibold;
+		font-size: 0.92857142857143rem;		// 13px / 14px
+		line-height: 1.38461538461538;		// 18px / 13px
+		text-transform: uppercase;
+	}
+
+	form {
+		position: relative;
+
+		// Font
+		&, input, button {
+			@include proxima-semibold;
+		}
+
+		input {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 15px;
+		}
+
+		button {
+			// Position
+			position: absolute;
+			top: 6px;
+			right: 5px;
+			width: 130px;
+			padding: 11px;
+
+			// Border
+			border: 0;
+			@include border-radius();
+
+			// Font
+			text-transform: uppercase;
+			color: $font-color-02;
+
+			// Background
+			background-color: $gradient-color-01; // Old browsers
+			@include filter-gradient($gradient-color-01, $gradient-color-02, horizontal); // IE6-9 fallback on horizontal gradient
+			@include background-image(linear-gradient(left top, $gradient-color-01 0%,$gradient-color-02 100%));
+		}
+	}
+}
+
+// Logo icon that displays at the top of #call-to-action
+.logo-icon {
+	margin-bottom: 24px;
 }
 
 
@@ -144,6 +254,13 @@ header {
 
 /* Footer
 ----------------------------------------------------------------------- */
+footer {
+	background: $bg-color-02;
+
+	h1, h2, h3, h4, h5, h6 {
+		@include proxima-regular;
+	}
+}
 
 
 

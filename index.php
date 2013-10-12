@@ -15,6 +15,11 @@
         <title>MODE Evaluation | Mattr Test</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Stylesheets -->
+        <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/stylesheets/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <!--[if lt IE 7]>

@@ -28,15 +28,19 @@ $(document).ready(function() {
 				success: function(data) {
 					// Display success message
 					console.log('✓ Requested');
+					$('#email-submit').addClass('success').text('✓ Requested');
+					$('#email-result').html('Congratulations,<br /> you\'re now on our beta request list.').animate({opacity: 1}, 300);
 				},
 				error: function() {
 					// Display error message
 					console.log('Sorry, there was an error in your submission');
+					$('#email-result').html('Sorry,<br /> there was an error in your submission').animate({opacity: 1}, 300);
 				}
 			});
 		} else {
 			// Display "invalidity" message
 			console.log('Sorry, your email address isn\'t registering as valid.');
+			$('#email-result').html('Sorry,<br /> your email address isn\'t registering as valid.').animate({opacity: 1}, 300);
 		}
 	});
 

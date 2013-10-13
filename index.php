@@ -78,6 +78,9 @@
                         <input id="email-address" type="email" placeholder="your@email.com" />
                         <button id="email-submit" type="submit">Submit</button>
                     </form>
+
+                    <!-- Form Result -->
+                    <div id="email-result"></div>
                 </div>
             </div>
         </section>

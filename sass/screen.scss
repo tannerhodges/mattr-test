@@ -21,8 +21,11 @@
 /* Layout
 ----------------------------------------------------------------------- */
 $max-width: 980px;						// Max width of the page content (Guess-timated from original PSD)
+$hero-max-height: 600px;			// Max height of the hero section
+
 $default-border-radius: 2px;	// Default border radius for generator
 $font-size-01: 14px;					// Default font size
+
 
 /* Colors
 ----------------------------------------------------------------------- */
@@ -200,6 +203,7 @@ header {
 /* Hero
 ----------------------------------------------------------------------- */
 .hero {
+	max-height: $hero-max-height;
 	background: $bg-color-03 image-url('hero-bg.jpg') top center no-repeat;
 	background-size: cover;		// Set size to cover to fill entire width of the page
 	color: $font-color-02;
@@ -234,48 +238,62 @@ header {
 		line-height: 1.38461538461538;		// 18px / 13px
 		text-transform: uppercase;
 	}
-
-	form {
-		position: relative;
-
-		// Font
-		&, input, button {
-			@include proxima-semibold;
-		}
-
-		input {
-			width: 100%;
-			@include box-sizing(border-box);
-			padding: 15px;
-		}
-
-		button {
-			// Position
-			position: absolute;
-			top: 6px;
-			right: 5px;
-			width: 130px;
-			padding: 11px;
-
-			// Border
-			border: 0;
-			@include border-radius();
-
-			// Font
-			text-transform: uppercase;
-			color: $font-color-02;
-
-			// Background
-			background-color: $gradient-color-01; // Old browsers
-			@include filter-gradient($gradient-color-01, $gradient-color-02, horizontal); // IE6-9 fallback on horizontal gradient
-			@include background-image(linear-gradient(left top, $gradient-color-01 0%,$gradient-color-02 100%));
-		}
-	}
 }
 
 // Logo icon that displays at the top of #call-to-action
 .logo-icon {
 	margin-bottom: 24px;
+}
+
+
+/* Email signup form
+----------------------------------------------------------------------- */
+// Form
+#email-signup {
+	position: relative;
+
+	// Font
+	&, input, button {
+		@include proxima-semibold;
+	}
+}
+
+// Input for email address
+#email-address {
+	width: 100%;
+	@include box-sizing(border-box);
+	padding: 15px;
+}
+
+// Submit button
+#email-submit {
+	// Position
+	position: absolute;
+	top: 6px;
+	right: 5px;
+	width: 130px;
+	padding: 11px;
+
+	// Border
+	border: 0;
+	@include border-radius();
+
+	// Font
+	text-transform: uppercase;
+	color: $font-color-02;
+
+	// Background
+	background-color: $gradient-color-01; // Old browsers
+	@include filter-gradient($gradient-color-01, $gradient-color-02, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(linear-gradient(left top, $gradient-color-01 0%,$gradient-color-02 100%));
+}
+
+// Display section for email errors and confirmation
+#email-result {
+	margin-top: 1em;
+
+	// Opacity prep for jQuery animation (i.e, fade in)
+	opacity: 0;
 }
 
 

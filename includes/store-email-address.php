@@ -1,6 +1,6 @@
 <?php
 
-$email_address = '';
+$email_address = $_POST['email_address'];
 
 // If email address isn't provided, exit
 if ( !$email_address ) {

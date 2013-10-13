@@ -12,6 +12,8 @@ $max-width: 980px;						// Max width of the page content (Guess-timated from ori
 $hero-max-height: 600px;			// Max height of the hero section
 $nav-height: 64px;						// Height of sticky navigation
 
+$gutter-01: 32px;							// Width of gutter (i.e, padding for responsive styles)
+
 $default-border-radius: 2px;	// Default border radius for generator
 $font-size-01: 14px;					// Default font size
 $font-size-02: 12px;					// Mobile font size
@@ -111,11 +113,16 @@ $gradient-color-02: #f14082;	// Rose
 ----------------------------------------------------------------------- */
 .wrap {
 	position: relative;
+	@include box-sizing(border-box);
 	@include full-width;		// Wrap content at the max width of the page
+
+	// Responsive breakpoint 02: 1024px
+	@media (max-width:1024px) {
+		padding: 0 $gutter-01;
+	}
 
 	// Responsive breakpoint 01: 660px
 	@media (max-width:660px) {
-		@include box-sizing(border-box);
 		max-width: 454px;
 		padding: 0 4%;
 	}
@@ -136,18 +143,6 @@ menu, ol, ul {
 	padding: 0 1em 1em 0;						// Set padding-right to 0
 	overflow: visible;								// Remove excess size data (allows perfect relative values, e.g. 33.333%)
 	vertical-align: top;							// Align content to top
-}
-
-.last {
-	padding: 0 0 1em 1em;	// Set padding-left to 0
-}
-
-.one-third {
-	width: 33.33333333333333%;
-}
-
-.one-fourth {
-	width: 25%;
 }
 
 
@@ -375,6 +370,11 @@ header {
 
 	.column {
 		margin-top: 20px;
+		width: 33.33333333333333%;
+
+		&:nth-child(3n) {
+			padding: 0 0 1em 1em;	// Set padding-left to 0
+		}
 	}
 }
 
@@ -423,7 +423,7 @@ header {
 	
 	// Responsive breakpoint 02: 1024px
 	@media (max-width:1024px) {
-		padding: 9px 0 9px 32px;
+		padding: 9px 0;
 	}
 }
 
@@ -458,7 +458,7 @@ header {
 
 	// Responsive breakpoint 02: 1024px
 	@media (max-width:1024px) {
-		right: 32px;
+		right: $gutter-01;
 	}
 
 	// Responsive breakpoint 01: 660px
@@ -487,6 +487,15 @@ footer {
 	// Links
 	a {
 		color: $font-color-05;
+	}
+
+	// Columns
+	.column {
+		width: 25%;
+
+		&:nth-child(4n) {
+			padding: 0 0 1em 1em;	// Set padding-left to 0
+		}
 	}
 }
 

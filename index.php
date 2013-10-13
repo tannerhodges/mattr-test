@@ -124,7 +124,7 @@
         <!-- Footer -->
         <footer>
             <div class="wrap">
-                <div class="column one-fourth">
+                <div class="location location-01 column">
                     <h3>San Francisco, CA</h3>
                     <ul>
                         <li>Rocketspace</li>
@@ -133,7 +133,7 @@
                     </ul>
                     <a href="javascript:void(0);">EMAIL US</a>
                 </div><!--
-                --><div class="column one-fourth">
+                --><div class="location location-02 column">
                     <h3>Austin, TX</h3>
                     <ul>
                         <li>8140 North Mopac Expressway</li>
@@ -142,15 +142,15 @@
                     </ul>
                     <a href="javascript:void(0);">EMAIL US</a>
                 </div><!--
-                --><div class="column one-fourth">
+                --><div class="social-links column">
                     <h3>Elsewhere</h3>
                     <ul>
-                        <li><a href="javascript:void(0);">Twitter</a></li>
-                        <li><a href="javascript:void(0);">Facebook</a></li>
-                        <li><a href="javascript:void(0);">LinkedIn</a></li>
+                        <li><img src="./img/social-icons-twitter.png" alt="" title="" /><a href="javascript:void(0);">Twitter</a></li>
+                        <li><img src="./img/social-icons-facebook.png" alt="" title="" /><a href="javascript:void(0);">Facebook</a></li>
+                        <li><img src="./img/social-icons-linkedin.png" alt="" title="" /><a href="javascript:void(0);">LinkedIn</a></li>
                     </ul>
                 </div><!--
-                --><div class="column one-fourth last">
+                --><div class="company-details column last">
                     <h3>Company</h3>
                     <ul>
                         <li><a href="javascript:void(0);">Sign In</a></li>

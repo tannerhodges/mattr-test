@@ -402,9 +402,52 @@ footer {
 	padding: 60px 0 110px 0;
 	background: $bg-color-02;
 
+	// Font
+	@include proxima-light;
+	font-size: 18px;
+	color: $font-color-05;
+
+	// Headings
 	h1, h2, h3, h4, h5, h6 {
-		@include proxima-regular;
+		@include proxima-light;
 	}
+
+	// Links
+	a {
+		color: $font-color-05;
+	}
+}
+
+// Location styles
+.location {
+	width: 34%;
+	padding-right: 40px;
+
+	a {
+		font-size: 13px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
+// Social links
+.social-links {
+	width: 15%;
+
+	img {
+		margin: -2px 10px 0 0;
+	}
+}
+
+// Company details
+.company-details {
+	width: 15%;
+}
+
+// Copyright
+.copyright {
+	margin-top: 65px;
+	font-size: $font-size-01;
 }
 
 

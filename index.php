@@ -61,6 +61,7 @@
                 <!-- Call to Action -->
                 <div id="call-to-action">
                     <img class="logo-icon" src="./img/logo/mattr-logo-icon.png" alt="" title="" />
+                    <img class="logo-stacked" src="./img/logo/mattr-logo-stacked.png" alt="" title="" />
                     <h1>Personalities<br />tell powerful stories.</h1>
                     <p class="description">The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
                     <p id="invitation">

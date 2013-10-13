@@ -14,6 +14,7 @@ $nav-height: 64px;						// Height of sticky navigation
 
 $default-border-radius: 2px;	// Default border radius for generator
 $font-size-01: 14px;					// Default font size
+$font-size-02: 12px;					// Mobile font size
 
 
 /* Colors
@@ -39,6 +40,12 @@ $gradient-color-01: #f7941e;	// Poppy Orange
 $gradient-color-02: #f14082;	// Rose
 
 
+/* Responsive breakpoints: 
+// Responsive breakpoint 01: 660px
+// Responsive breakpoint 02: 1024px
+ */
+
+
 
 /* =======================================================================
 		IMPORT LIBRARIES
@@ -62,10 +69,12 @@ $gradient-color-02: #f14082;	// Rose
 		MIXINS
 ======================================================================= */
 
+/* Helpers
+----------------------------------------------------------------------- */
 // Smooth fonts via browser rendering
 @mixin smooth-fonts {
-	font-smoothing: antialiased;
-	-webkit-font-smoothing: antialiased;
+	// font-smoothing: antialiased;
+	// -webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
@@ -82,6 +91,9 @@ $gradient-color-02: #f14082;	// Rose
 	max-width: $max-width;	// Set max-width to predefined value
 }
 
+
+/* Gradients
+----------------------------------------------------------------------- */
 // Gradient 01
 @mixin bg-gradient-01 {
 	background-color: $gradient-color-01; // Old browsers
@@ -100,6 +112,13 @@ $gradient-color-02: #f14082;	// Rose
 .wrap {
 	position: relative;
 	@include full-width;		// Wrap content at the max width of the page
+
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		@include box-sizing(border-box);
+		max-width: 454px;
+		padding: 0 4%;
+	}
 }
 
 // Remove padding from lists
@@ -147,6 +166,11 @@ html, body {
 	@include proxima-regular;
 	font-size: $font-size-01;
 	color: $font-color-01;
+
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		font-size: $font-size-02;
+	}
 }
 
 // Heading font
@@ -177,8 +201,10 @@ header {
 .logo-text {
 	padding: 20px 0 55px 0;
 
-//	Not sure how to get the image replacement to work just yet
-//	background: image-url('mattr-logo-text.png') center left no-repeat;
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		display: none;
+	}
 }
 
 
@@ -189,6 +215,11 @@ header {
 	position: absolute;
 	top: 12px;
 	right: 0;
+
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		top: 2px;
+	}
 
 	// Font
 	font-size: 0.85714285714286rem;	// 12px / 14px
@@ -240,13 +271,33 @@ header {
 
 	h1 {
 		font-size: 48px;
-		line-height: 0.91666666666667;	// 44px / 48px
+		line-height: 1; 
+
+		// Responsive breakpoint 01: 660px
+		@media (max-width:660px) {
+			font-size: 31px;
+		}
 	}
 }
 
 // Logo icon that displays at the top of #call-to-action
 .logo-icon {
-	margin-bottom: 24px;
+	margin-bottom: 15px;
+
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		display: none;
+	}
+}
+.logo-stacked {
+	display: none;
+	padding: 55px 0 35px 0;
+	margin: 0 auto;
+
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		display: block;
+	}
 }
 
 // Paragraph below heading
@@ -364,19 +415,24 @@ header {
 /* Sticky Navigation
 ----------------------------------------------------------------------- */
 #sticky-nav {
+
 }
 
 .logo-full {
 	padding: 9px 0;
+	
+	// Responsive breakpoint 02: 1024px
+	@media (max-width:1024px) {
+		padding: 9px 0 9px 32px;
+	}
 }
 
 #request-invite {
 	// Size
 	display: block;
-	height: 30px;
+	width: 100%;
 	max-width: 180px;
 	padding: 6px;
-	width: 180px;
 
 	// Position
 	position: absolute;
@@ -389,16 +445,26 @@ header {
 
 	// Border
 	@include box-sizing(border-box);
-	@include border-radius();
+	@include border-radius(4px);
 	
 	// Font
 	@include proxima-bold;
 	color: $font-color-02;
-	font-size: 12px;
+	font-size: 0.85714285714286rem;
 	line-height: 18px;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
+
+	// Responsive breakpoint 02: 1024px
+	@media (max-width:1024px) {
+		right: 32px;
+	}
+
+	// Responsive breakpoint 01: 660px
+	@media (max-width:660px) {
+		max-width: 147px;
+	}
 }
 
 

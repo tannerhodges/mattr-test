@@ -42,9 +42,7 @@
 
     // Responsive updates (remove under 480px)
     @media screen and (max-width:480px) {
-        & {
-            display: none;
-        }
+        display: none;
     }
 }
 

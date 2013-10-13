@@ -241,23 +241,26 @@ header {
 		font-size: 48px;
 		line-height: 0.91666666666667;	// 44px / 48px
 	}
-
-	.description {
-		margin-bottom: 45px;
-	}
-
-	.invite {
-		@include proxima-semibold;
-		font-size: 0.92857142857143rem;		// 13px / 14px
-		line-height: 1.38461538461538;		// 18px / 13px
-		text-transform: uppercase;
-	}
 }
 
 // Logo icon that displays at the top of #call-to-action
 .logo-icon {
 	margin-bottom: 24px;
 }
+
+// Paragraph below heading
+.description {
+	margin-bottom: 45px;
+}
+
+// CTA text directly above the form
+#invitation {
+	@include proxima-semibold;
+	font-size: 0.92857142857143rem;		// 13px / 14px
+	line-height: 1.38461538461538;		// 18px / 13px
+	text-transform: uppercase;
+}
+
 
 
 /* Email signup form

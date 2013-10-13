@@ -97,13 +97,13 @@ menu, ol, ul {
 	display: inline-block;						// Keep elements on same line
 	/* Note: inline-block will require you to remove whitespace from in between elements to work properly. */
 	@include box-sizing(border-box);	// Set width to outer border
-	padding: 1em 1em 1em 0;						// Set padding-right to 0
+	padding: 0 1em 1em 0;						// Set padding-right to 0
 	overflow: visible;								// Remove excess size data (allows perfect relative values, e.g. 33.333%)
 	vertical-align: top;							// Align content to top
 }
 
 .last {
-	padding: 1em 0 1em 1em;	// Set padding-left to 0
+	padding: 0 0 1em 1em;	// Set padding-left to 0
 }
 
 .one-third {
@@ -161,7 +161,7 @@ header {
 	padding: 20px 0 55px 0;
 
 //	Not sure how to get the image replacement to work just yet
-//	background: url('../img/mattr-logo-text.png') center left no-repeat;
+//	background: image-url('mattr-logo-text.png') center left no-repeat;
 }
 
 
@@ -200,7 +200,7 @@ header {
 /* Hero
 ----------------------------------------------------------------------- */
 .hero {
-	background: $bg-color-03 url('../img/hero-bg.jpg') top center no-repeat;
+	background: $bg-color-03 image-url('hero-bg.jpg') top center no-repeat;
 	background-size: cover;		// Set size to cover to fill entire width of the page
 	color: $font-color-02;
 
@@ -281,11 +281,47 @@ header {
 
 /* Main Content
 ----------------------------------------------------------------------- */
+.main-content {
+	margin-bottom: 135px;
+
+	.column {
+		margin-top: 50px;
+	}
+}
+
+.app-info {
+	h2 {
+		// Position
+		margin: 95px 0 12px 0; // Distance from top - Column margin top = 145px - 50px
+
+		// Font
+		color: $font-color-03;
+		font-size: 3.71428571428571rem;	// 52px / 14px
+		line-height: 1;
+	}
+
+	p {
+		// Position
+		margin: 0;
+
+		// Font
+		@include adelle-light-italic;
+		font-size: 1.21428571428571rem;	// 17px / 14px
+		line-height: 1.57142857142857;	// 22px / 14px
+	}
+}
+
+// Circle images at the top of each column in main content
+.app-feature-image {
+	display: block;
+	margin: 0 auto;
+}
 
 
 /* Footer
 ----------------------------------------------------------------------- */
 footer {
+	padding: 60px 0 110px 0;
 	background: $bg-color-02;
 
 	h1, h2, h3, h4, h5, h6 {
@@ -301,10 +337,10 @@ footer {
 
 // Prompt to show for outdated browsers
 .browsehappy {
-    margin: 0.2em 0;
+    margin: 0.2rem 0;
     background: #ccc;
     color: #000;
-    padding: 0.2em 0;
+    padding: 0.2rem 0;
 }
 
 // Temporarily hide stick-nav

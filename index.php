@@ -84,32 +84,37 @@
 
         <!-- Main Content -->
         <div class="main-content wrap">
-            <div class="column one-third">
+            <div class="app-info column one-third">
                 <h2>The App</h2>
                 <p>Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools.  Explore our Features to learn more.</p>
             </div><!--
 
             --><div class="column one-third">
+                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
                 <h2>Audience Personality Segments</h2>
                 <p>Decide how you want to look at your audience, based on our Unique Personality Type Analysis and demographics.</p>
             </div><!--
 
             --><div class="column one-third last">
+                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
                 <h2>Persona Builder</h2>
                 <p>Combine Personality Traits and Demographic information to create Audience Personas that make sense for your business.</p>
             </div><!--
 
             --><div class="column one-third">
+                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
                 <h2>Engagement Response by Persona</h2>
                 <p>Which of your social media activities are attacting the audience engagement you’re looking for? See a segmented report on a per-post basis.</p>
             </div><!--
 
             --><div class="column one-third">
+                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
                 <h2>Social Brand Benchmarking</h2>
                 <p>See how your brand’s audience compares to that of your competition, or your industry. Choose what you want to compare and then view the comparision.</p>
             </div><!--
 
             --><div class="column one-third last">
+                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
                 <h2>Sentiment Variance</h2>
                 <p>Knowing that your audience is ‘upbeat’ just isn’t enough. You need to know if they’re more upbeat about your brand than they are about other things.</p>
             </div>

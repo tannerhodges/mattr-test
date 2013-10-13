@@ -41,11 +41,9 @@ $link-color-02: #fb0059;	// Rose
 $gradient-color-01: #f7941e;	// Poppy Orange
 $gradient-color-02: #f14082;	// Rose
 
-
-/* Responsive breakpoints: 
-// Responsive breakpoint 01: 660px
-// Responsive breakpoint 02: 1024px
- */
+// Responsive breakpoints
+$breakpoint-01: 660px;
+$breakpoint-02: 1024px;
 
 
 
@@ -117,12 +115,12 @@ $gradient-color-02: #f14082;	// Rose
 	@include full-width;		// Wrap content at the max width of the page
 
 	// Responsive breakpoint 02: 1024px
-	@media (max-width:1024px) {
+	@media (max-width: $breakpoint-02) {
 		padding: 0 $gutter-01;
 	}
 
 	// Responsive breakpoint 01: 660px
-	@media (max-width:660px) {
+	@media (max-width: $breakpoint-01) {
 		max-width: 454px;
 		padding: 0 4%;
 	}
@@ -192,7 +190,7 @@ header {
 	padding: 20px 0 55px 0;
 
 	// Responsive breakpoint 01: 660px
-	@media (max-width:660px) {
+	@media (max-width: $breakpoint-01) {
 		display: none;
 	}
 }
@@ -207,7 +205,7 @@ header {
 	right: 0;
 
 	// Responsive breakpoint 01: 660px
-	@media (max-width:660px) {
+	@media (max-width: $breakpoint-01) {
 		top: 2px;
 	}
 
@@ -264,13 +262,13 @@ header {
 		line-height: 1; 
 
 		// Responsive breakpoint 01: 660px
-		@media (max-width:660px) {
+		@media (max-width: $breakpoint-01) {
 			font-size: 31px;
 		}
 	}
 
 	// Responsive breakpoint 01: 660px
-	@media (max-width:660px) {
+	@media (max-width: $breakpoint-01) {
 		font-size: 12px;
 	}
 }
@@ -280,7 +278,7 @@ header {
 	margin-bottom: 15px;
 
 	// Responsive breakpoint 01: 660px
-	@media (max-width:660px) {
+	@media (max-width: $breakpoint-01) {
 		display: none;
 	}
 }
@@ -290,7 +288,7 @@ header {
 	margin: 0 auto;
 
 	// Responsive breakpoint 01: 660px
-	@media (max-width:660px) {
+	@media (max-width: $breakpoint-01) {
 		display: block;
 	}
 }
@@ -314,7 +312,7 @@ header {
 ----------------------------------------------------------------------- */
 // Form
 #email-signup {
-	position: relative;
+	position: relative;								// Allows for #email-submit to use position absolute
 
 	// Font
 	&, input, button {
@@ -372,7 +370,7 @@ header {
 		margin-top: 20px;
 
 		// Responsive breakpoint 02: 1024px
-		@media (min-width:1023px) {
+		@media (min-width: ( $breakpoint-02 - 1) ) {
 			width: 33.33333333333333%;
 			
 			&:nth-child(3n) {
@@ -380,7 +378,7 @@ header {
 			}
 		}
 		// Responsive breakpoint 01: 660px (b)
-		@media (min-width:659px) and (max-width:1024px) {
+		@media (min-width: ( $breakpoint-01 - 1 ) ) and (max-width: $breakpoint-02) {
 			width: 50%;
 			
 			&:nth-child(2n) {
@@ -388,7 +386,7 @@ header {
 			}
 		}
 		// Responsive breakpoint 01: 660px (a)
-		@media (max-width:660px) {
+		@media (max-width: $breakpoint-01) {
 			width: 100%;
 			padding: 0;
 		}
@@ -432,15 +430,11 @@ header {
 
 /* Sticky Navigation
 ----------------------------------------------------------------------- */
-#sticky-nav {
-
-}
-
 .logo-full {
 	padding: 9px 0;
 	
 	// Responsive breakpoint 02: 1024px
-	@media (max-width:1024px) {
+	@media (max-width: $breakpoint-02) {
 		padding: 9px 0;
 	}
 }
@@ -458,7 +452,6 @@ header {
 	right: 0;
 
 	// Background
-	// background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(247, 148, 30) 32%, rgb(241, 64, 130) 100%);
 	@include bg-gradient-01;
 
 	// Border
@@ -475,7 +468,7 @@ header {
 	text-transform: uppercase;
 
 	// Responsive breakpoint 02: 1024px
-	@media (max-width:1024px) {
+	@media (max-width: $breakpoint-02) {
 		right: $gutter-01;
 	}
 }
@@ -505,7 +498,7 @@ footer {
 	// Columns
 	.column {
 		// Responsive breakpoint 02: 1024px
-		@media (min-width:1023px) {
+		@media (min-width: ( $breakpoint-02 - 1) ) {
 			// First two columns
 			&:nth-child(-n+2) {
 				width: 33.33333333333333%;
@@ -521,7 +514,7 @@ footer {
 			}
 		}
 		// Responsive breakpoint 01: 660px (b)
-		@media (min-width:659px) and (max-width:1024px) {
+		@media (min-width: ( $breakpoint-01 - 1 ) ) and (max-width: $breakpoint-02) {
 			width: 50%;
 			
 			&:nth-child(2n) {
@@ -529,7 +522,7 @@ footer {
 			}
 		}
 		// Responsive breakpoint 01: 660px (a)
-		@media (max-width:660px) {
+		@media (max-width: $breakpoint-01) {
 			width: 100%;
 			padding: 0;
 		}

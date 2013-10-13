@@ -42,15 +42,30 @@ $(document).ready(function() {
 			console.log('Sorry, your email address isn\'t registering as valid.');
 			$('#email-result').html('Sorry,<br /> your email address isn\'t registering as valid.').animate({opacity: 1}, 300);
 		}
-	});
+	});	
+
 
 	/*
 		Sticky nav:
 		- Changes slightly
 		- Slowly motions down with user scrolling
 	*/
-	
+	$(window).scroll(function() {
+		var a = $(window).scrollTop(),
+	  b = $(".main-content");
+		$("body");
+		0>=b.offset().top-a?$("#sticky-nav").removeClass("invisible hide").addClass("show"):$("#sticky-nav").removeClass("show").addClass("hide")
+	});
+
+	// Hide sticky-nav once request-invite is clicked
+	$('#request-invite').on('click', function() {
+		$('.sticky-nav.fixed').removeClass('show').addClass('hide');
+		$('#email-address').focus();
+	});
+
+// End $(document).ready()
 });
+
 
 // Validate email function
 function validateEmail(email_address) {

@@ -2,18 +2,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-// Import Compass libraries
-@import "compass/reset";							// Reset styles
-@import "compass/css3/border-radius";	// Cross-browser border radius
-@import "compass/css3/images";				// Gradients
-@import "compass/css3/box-sizing";		// Cross-browser box sizing
-
-// Import additional CSS
-@import "normalize";			// Normalize
-@import "h5bp";						// HTML5 Boilerplate
-@import "fonts";					// Custom fonts (e.g, Typekit, etc)
-
-
 /* =======================================================================
 		VARIABLES
 ======================================================================= */
@@ -22,6 +10,7 @@
 ----------------------------------------------------------------------- */
 $max-width: 980px;						// Max width of the page content (Guess-timated from original PSD)
 $hero-max-height: 600px;			// Max height of the hero section
+$nav-height: 64px;						// Height of sticky navigation
 
 $default-border-radius: 2px;	// Default border radius for generator
 $font-size-01: 14px;					// Default font size
@@ -48,6 +37,24 @@ $link-color-02: #fb0059;	// Rose
 // Gradient colors (for buttons)
 $gradient-color-01: #f7941e;	// Poppy Orange
 $gradient-color-02: #f14082;	// Rose
+
+
+
+/* =======================================================================
+		IMPORT LIBRARIES
+======================================================================= */
+
+// Import Compass libraries
+@import "compass/reset";							// Reset styles
+@import "compass/css3/border-radius";	// Cross-browser border radius
+@import "compass/css3/images";				// Gradients
+@import "compass/css3/box-sizing";		// Cross-browser box sizing
+
+// Import additional CSS
+@import "normalize";			// Normalize
+@import "h5bp";						// HTML5 Boilerplate
+@import "fonts";					// Custom fonts (e.g, Typekit, etc)
+@import "sticky-nav";			// Sticky navigation styles
 
 
 
@@ -359,9 +366,4 @@ footer {
     background: #ccc;
     color: #000;
     padding: 0.2rem 0;
-}
-
-// Temporarily hide stick-nav
-.sticky-nav {
-	display: none;
 }

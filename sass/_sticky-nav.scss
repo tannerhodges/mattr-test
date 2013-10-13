@@ -1,0 +1,100 @@
+/* 
+ * Styles and animation for sticky navigation
+ */
+
+// Import necessary Compass library
+@import "compass/css3/transform";
+
+// Confirm height of navigation is set
+@if $nav-height == null {
+    $nav-height: 64px;
+}
+
+
+/* Basic styles
+----------------------------------------------------------------------- */
+#sticky-nav {
+    height: $nav-height;
+    position: relative;
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+        background: #2f2f2f;
+    }
+    &.invisible {
+        opacity: 0;
+    }
+    &.hide {
+        @include translateY( -1 * $nav-height );
+        -webkit-animation: .3s hideScrollNav ease;
+        -moz-animation: .3s hideScrollNav ease;
+        -o-animation: .3s hideScrollNav ease;
+        animation: .3s hideScrollNav ease;
+    }
+    &.show {
+        -webkit-animation: .3s showScrollNav ease;
+        -moz-animation: .3s showScrollNav ease;
+        animation: .3s showScrollNav ease;
+    }
+
+    // Responsive updates (remove under 480px)
+    @media screen and (max-width:480px) {
+        & {
+            display: none;
+        }
+    }
+}
+
+.lt-ie9 #sticky-nav.invisible {
+    display: none;
+}
+.lt-ie9 #sticky-nav.hide {
+    display: none;
+    opacity: 0;
+}
+.lt-ie9 #sticky-nav.show {
+    display: block;
+    opacity: 1;
+}
+
+
+/* Slide animations
+----------------------------------------------------------------------- */
+// Show
+@-webkit-keyframes showScrollNav {
+    0% { @include translateY( -1 * $nav-height ); }
+    100% { @include translateY(0); }
+}
+@-moz-keyframes showScrollNav {
+    0% { @include translateY( -1 * $nav-height ); }
+    100% { @include translateY(0); }
+}
+@-o-keyframes showScrollNav {
+    0% { @include translateY( -1 * $nav-height ); }
+    100% { @include translateY(0); }
+}
+@keyframes showScrollNav {
+    0% { @include translateY( -1 * $nav-height ); }
+    100% { @include translateY(0); }
+}
+
+// Hide
+@-webkit-keyframes hideScrollNav {
+    0% { @include translateY(0); }
+    100% { @include translateY( -1 * $nav-height ); }
+}
+@-moz-keyframes hideScrollNav {
+    0% { @include translateY(0); }
+    100% { @include translateY( -1 * $nav-height ); }
+}
+@-o-keyframes hideScrollNav {
+    0% { @include translateY(0); }
+    100% { @include translateY( -1 * $nav-height ); }
+}
+@keyframes hideScrollNav {
+    0% { @include translateY(0); }
+    100% { @include translateY( -1 * $nav-height ); }
+}

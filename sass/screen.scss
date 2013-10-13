@@ -297,7 +297,11 @@ header {
 
 // Display section for email errors and confirmation
 #email-result {
+	// Position
 	margin-top: 1em;
+
+	// Font
+	@include proxima-bold;
 
 	// Opacity prep for jQuery animation (i.e, fade in)
 	opacity: 0;

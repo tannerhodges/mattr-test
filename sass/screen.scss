@@ -36,10 +36,13 @@ $font-color-06: #61728f;	// Lynch Gray
 // Link colors
 $link-color-01: #416589;	// Bismark Blue
 $link-color-02: #fb0059;	// Rose
+$link-color-03: #ff64a9;	// Hot Pink
 
 // Gradient colors (for buttons)
 $gradient-color-01: #f7941e;	// Poppy Orange
 $gradient-color-02: #f14082;	// Rose
+$gradient-color-03: #e5921d;	// Dixie Orange
+$gradient-color-04: #e53d62;	// Cerise Red
 
 // Responsive breakpoints
 $breakpoint-01: 660px;
@@ -95,10 +98,10 @@ $breakpoint-02: 1024px;
 /* Gradients
 ----------------------------------------------------------------------- */
 // Gradient 01
-@mixin bg-gradient-01 {
-	background-color: $gradient-color-01; // Old browsers
-	@include filter-gradient($gradient-color-01, $gradient-color-02, horizontal); // IE6-9 fallback on horizontal gradient
-	@include background-image(linear-gradient(left top, $gradient-color-01 0%,$gradient-color-02 100%));
+@mixin bg-gradient($c1, $c2) {
+	background-color: $c1; // Old browsers
+	@include filter-gradient($c1, $c2, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(linear-gradient(left top, $c1 0%, $c2 100%));
 }
 
 
@@ -225,6 +228,7 @@ header {
 				color: $link-color-02;
 
 				&:hover {
+					color: $link-color-03;
 					text-decoration: none;
 				}
 			}
@@ -345,7 +349,10 @@ header {
 	color: $font-color-02;
 
 	// Background
-	@include bg-gradient-01;
+	@include bg-gradient($gradient-color-01, $gradient-color-02);
+	&:hover {
+		@include bg-gradient($gradient-color-03, $gradient-color-04);
+	}
 }
 
 // Display section for email errors and confirmation
@@ -452,7 +459,10 @@ header {
 	right: 0;
 
 	// Background
-	@include bg-gradient-01;
+	@include bg-gradient($gradient-color-01, $gradient-color-02);
+	&:hover {
+		@include bg-gradient($gradient-color-03, $gradient-color-04);
+	}
 
 	// Border
 	@include box-sizing(border-box);
@@ -482,12 +492,13 @@ footer {
 
 	// Font
 	@include proxima-light;
-	font-size: 1.28571428571429rem;
+	font-size: 1.14285714285714rem;
 	color: $font-color-05;
 
 	// Headings
 	h1, h2, h3, h4, h5, h6 {
 		@include proxima-light;
+		font-size: 1.35714285714286rem;
 	}
 
 	// Links
@@ -533,7 +544,6 @@ footer {
 			a {
 				font-size: 13px;
 				font-weight: bold;
-				text-decoration: none;
 			}
 		}
 

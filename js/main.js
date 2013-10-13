@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 	// Hide sticky-nav once request-invite is clicked
 	$('#request-invite').on('click', function() {
-		$('.sticky-nav.fixed').removeClass('show').addClass('hide');
+		$('#sticky-nav').removeClass('show').addClass('hide');
 		$('#email-address').focus();
 	});
 

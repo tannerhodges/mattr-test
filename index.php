@@ -83,8 +83,8 @@
         <!-- Sticky Navigation -->
         <div id="sticky-nav" class="fixed hide">
             <div class="wrap">
-                <a href="javascript:void(0);">Mattr</a>
-                <a id="request-invite" href="#invitation">Request An Invitation</a>
+                <a href="javascript:void(0);"><img class="logo-full" src="./img/mattr-logo-full.png" alt="" /></a>
+                <a id="request-invite" href="#call-to-action">Request An Invitation</a>
             </div>
         </div>
 

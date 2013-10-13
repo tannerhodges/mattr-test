@@ -82,6 +82,13 @@ $gradient-color-02: #f14082;	// Rose
 	max-width: $max-width;	// Set max-width to predefined value
 }
 
+// Gradient 01
+@mixin bg-gradient-01 {
+	background-color: $gradient-color-01; // Old browsers
+	@include filter-gradient($gradient-color-01, $gradient-color-02, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(linear-gradient(left top, $gradient-color-01 0%,$gradient-color-02 100%));
+}
+
 
 
 /* =======================================================================
@@ -290,9 +297,7 @@ header {
 	color: $font-color-02;
 
 	// Background
-	background-color: $gradient-color-01; // Old browsers
-	@include filter-gradient($gradient-color-01, $gradient-color-02, horizontal); // IE6-9 fallback on horizontal gradient
-	@include background-image(linear-gradient(left top, $gradient-color-01 0%,$gradient-color-02 100%));
+	@include bg-gradient-01;
 }
 
 // Display section for email errors and confirmation
@@ -344,6 +349,47 @@ header {
 .app-feature-image {
 	display: block;
 	margin: 0 auto;
+}
+
+
+/* Sticky Navigation
+----------------------------------------------------------------------- */
+#sticky-nav {
+}
+
+.logo-full {
+	padding: 9px 0;
+}
+
+#request-invite {
+	// Size
+	display: block;
+	height: 30px;
+	max-width: 180px;
+	padding: 6px;
+	width: 180px;
+
+	// Position
+	position: absolute;
+	top: 18px;
+	right: 0;
+
+	// Background
+	// background: rgba(0, 0, 0, 0) linear-gradient(135deg, rgb(247, 148, 30) 32%, rgb(241, 64, 130) 100%);
+	@include bg-gradient-01;
+
+	// Border
+	@include box-sizing(border-box);
+	@include border-radius();
+	
+	// Font
+	@include proxima-bold;
+	color: $font-color-02;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 

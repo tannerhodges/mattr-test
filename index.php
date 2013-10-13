@@ -125,7 +125,7 @@
         <!-- Footer -->
         <footer>
             <div class="wrap">
-                <div class="location location-01 column">
+                <div class="column">
                     <h3>San Francisco, CA</h3>
                     <ul>
                         <li>Rocketspace</li>
@@ -134,7 +134,7 @@
                     </ul>
                     <a href="javascript:void(0);">EMAIL US</a>
                 </div><!--
-                --><div class="location location-02 column">
+                --><div class="column">
                     <h3>Austin, TX</h3>
                     <ul>
                         <li>8140 North Mopac Expressway</li>
@@ -143,7 +143,7 @@
                     </ul>
                     <a href="javascript:void(0);">EMAIL US</a>
                 </div><!--
-                --><div class="social-links column">
+                --><div class="column">
                     <h3>Elsewhere</h3>
                     <ul>
                         <li><img src="./img/social-icons/twitter.png" alt="" title="" /><a href="javascript:void(0);">Twitter</a></li>
@@ -151,7 +151,7 @@
                         <li><img src="./img/social-icons/linkedin.png" alt="" title="" /><a href="javascript:void(0);">LinkedIn</a></li>
                     </ul>
                 </div><!--
-                --><div class="company-details column">
+                --><div class="column">
                     <h3>Company</h3>
                     <ul>
                         <li><a href="javascript:void(0);">Sign In</a></li>

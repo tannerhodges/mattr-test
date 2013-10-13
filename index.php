@@ -47,7 +47,7 @@
                 <header>
                     <h1>
                         <a href="javascript:void(0);">
-                            <img class="logo-text" src="./img/mattr-logo-text.png" alt="Mattr" title="Mattr" />
+                            <img class="logo-text" src="./img/logo/mattr-logo-text.png" alt="Mattr" title="Mattr" />
                         </a>
                     </h1>
                     <nav id="main-navigation">
@@ -60,7 +60,7 @@
 
                 <!-- Call to Action -->
                 <div id="call-to-action">
-                    <img class="logo-icon" src="./img/mattr-logo-icon.png" alt="" />
+                    <img class="logo-icon" src="./img/logo/mattr-logo-icon.png" alt="" title="" />
                     <h1>Personalities<br />tell powerful stories.</h1>
                     <p class="description">The key to successful brand engagement lies within the vibrant personalities that make up online audiences. Mattr translates the social data they generate into powerful stories and actionable insights, allowing brands to connect on a deeper level with their targets.</p>
                     <p id="invitation">
@@ -83,7 +83,7 @@
         <!-- Sticky Navigation -->
         <div id="sticky-nav" class="fixed hide">
             <div class="wrap">
-                <a href="javascript:void(0);"><img class="logo-full" src="./img/mattr-logo-full.png" alt="" /></a>
+                <a href="javascript:void(0);"><img class="logo-full" src="./img/logo/mattr-logo-full.png"  alt="Mattr" title="Mattr" /></a>
                 <a id="request-invite" href="#call-to-action">Request An Invitation</a>
             </div>
         </div>
@@ -95,27 +95,27 @@
                 <p>Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools.  Explore our Features to learn more.</p>
             </div><!--
             --><div class="column one-third">
-                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
+                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-01.png" alt="" title="" /></a>
                 <h2>Audience Personality Segments</h2>
                 <p>Decide how you want to look at your audience, based on our Unique Personality Type Analysis and demographics.</p>
             </div><!--
             --><div class="column one-third last">
-                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
+                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-02.png" alt="" title="" /></a>
                 <h2>Persona Builder</h2>
                 <p>Combine Personality Traits and Demographic information to create Audience Personas that make sense for your business.</p>
             </div><!--
             --><div class="column one-third">
-                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
+                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-03.png" alt="" title="" /></a>
                 <h2>Engagement Response by Persona</h2>
                 <p>Which of your social media activities are attacting the audience engagement you’re looking for? See a segmented report on a per-post basis.</p>
             </div><!--
             --><div class="column one-third">
-                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
+                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-04.png" alt="" title="" /></a>
                 <h2>Social Brand Benchmarking</h2>
                 <p>See how your brand’s audience compares to that of your competition, or your industry. Choose what you want to compare and then view the comparision.</p>
             </div><!--
             --><div class="column one-third last">
-                <img class="app-feature-image" src="http://placehold.it/178x178" alt="" title="" />
+                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-05.png" alt="" title="" /></a>
                 <h2>Sentiment Variance</h2>
                 <p>Knowing that your audience is ‘upbeat’ just isn’t enough. You need to know if they’re more upbeat about your brand than they are about other things.</p>
             </div>
@@ -145,9 +145,9 @@
                 --><div class="social-links column">
                     <h3>Elsewhere</h3>
                     <ul>
-                        <li><img src="./img/social-icons-twitter.png" alt="" title="" /><a href="javascript:void(0);">Twitter</a></li>
-                        <li><img src="./img/social-icons-facebook.png" alt="" title="" /><a href="javascript:void(0);">Facebook</a></li>
-                        <li><img src="./img/social-icons-linkedin.png" alt="" title="" /><a href="javascript:void(0);">LinkedIn</a></li>
+                        <li><img src="./img/social-icons/twitter.png" alt="" title="" /><a href="javascript:void(0);">Twitter</a></li>
+                        <li><img src="./img/social-icons/facebook.png" alt="" title="" /><a href="javascript:void(0);">Facebook</a></li>
+                        <li><img src="./img/social-icons/linkedin.png" alt="" title="" /><a href="javascript:void(0);">LinkedIn</a></li>
                     </ul>
                 </div><!--
                 --><div class="company-details column last">

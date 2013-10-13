@@ -218,6 +218,7 @@ header {
 ----------------------------------------------------------------------- */
 .hero {
 	max-height: $hero-max-height;
+	margin-bottom: 30px;
 	background: $bg-color-03 image-url('hero-bg.jpg') top center no-repeat;
 	background-size: cover;		// Set size to cover to fill entire width of the page
 	color: $font-color-02;
@@ -322,14 +323,14 @@ header {
 	margin-bottom: 135px;
 
 	.column {
-		margin-top: 50px;
+		margin-top: 20px;
 	}
 }
 
 .app-info {
 	h2 {
 		// Position
-		margin: 95px 0 12px 0; // Distance from top - Column margin top = 145px - 50px
+		margin: 90px 0 12px 0; // Distance from top - Column margin top = 145px - 50px
 
 		// Font
 		color: $font-color-03;
@@ -351,7 +352,12 @@ header {
 // Circle images at the top of each column in main content
 .app-feature-image {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 17px auto;
+
+	// Correct off-centered circles
+	// Note: each image from the PSD is a different size
+	position: relative; 
+	left: -3px;
 }
 
 

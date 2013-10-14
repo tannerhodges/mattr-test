@@ -129,11 +129,6 @@ $breakpoint-02: 1024px;
 	}
 }
 
-// Remove padding from lists
-menu, ol, ul {
-	padding: 0;
-}
-
 
 /* Columns
 ----------------------------------------------------------------------- */
@@ -168,6 +163,11 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
 	@include adelle-light;
 	color: $font-color-04;
+}
+
+// Remove padding from lists
+menu, ol, ul {
+	padding: 0;
 }
 
 
@@ -373,6 +373,7 @@ header {
 .main-content {
 	margin-bottom: 135px;
 
+	// Columns
 	.column {
 		margin-top: 20px;
 

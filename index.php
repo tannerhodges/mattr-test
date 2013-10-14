@@ -24,7 +24,7 @@
         <link href="./css/print.css" media="screen, projection" rel="stylesheet" type="text/css" />
         <link href="./css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-        <!-- Typekit Scripts -->
+        <!-- Typekit Script -->
         <script>
         (function() {
         var config = {
@@ -96,27 +96,27 @@
                 <p>Mattr allows you to build a more complete view of your social media audience through a comprehensive set of segmentation, comparison, monitoring, and visualization tools.  Explore our Features to learn more.</p>
             </div><!--
             --><div class="column">
-                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-01.png" alt="" title="" /></a>
+                <a href="./img/screenshots/01-audience-segment.jpg" class="fancybox"><img class="app-feature-image" src="./img/features/feature-01.png" alt="" title="" /></a>
                 <h2>Audience Personality Segments</h2>
                 <p>Decide how you want to look at your audience, based on our Unique Personality Type Analysis and demographics.</p>
             </div><!--
             --><div class="column">
-                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-02.png" alt="" title="" /></a>
+                <a href="./img/screenshots/02-persona-builder.jpg" class="fancybox"><img class="app-feature-image" src="./img/features/feature-02.png" alt="" title="" /></a>
                 <h2>Persona Builder</h2>
                 <p>Combine Personality Traits and Demographic information to create Audience Personas that make sense for your business.</p>
             </div><!--
             --><div class="column">
-                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-03.png" alt="" title="" /></a>
+                <a href="./img/screenshots/03-engagement.jpg" class="fancybox"><img class="app-feature-image" src="./img/features/feature-03.png" alt="" title="" /></a>
                 <h2>Engagement Response by Persona</h2>
                 <p>Which of your social media activities are attacting the audience engagement you’re looking for? See a segmented report on a per-post basis.</p>
             </div><!--
             --><div class="column">
-                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-04.png" alt="" title="" /></a>
+                <a href="./img/screenshots/04-social-benchmarking.jpg" class="fancybox"><img class="app-feature-image" src="./img/features/feature-04.png" alt="" title="" /></a>
                 <h2>Social Brand Benchmarking</h2>
                 <p>See how your brand’s audience compares to that of your competition, or your industry. Choose what you want to compare and then view the comparision.</p>
             </div><!--
             --><div class="column">
-                <a href="javascript:void(0);"><img class="app-feature-image" src="./img/features/feature-05.png" alt="" title="" /></a>
+                <a href="./img/screenshots/05-sentiment-variance.jpg" class="fancybox"><img class="app-feature-image" src="./img/features/feature-05.png" alt="" title="" /></a>
                 <h2>Sentiment Variance</h2>
                 <p>Knowing that your audience is ‘upbeat’ just isn’t enough. You need to know if they’re more upbeat about your brand than they are about other things.</p>
             </div>
@@ -167,9 +167,19 @@
             </div>
         </footer>
 
+        <!-- Scripts -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="./js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="./js/plugins.js"></script>
         <script src="./js/main.js"></script>
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="./fancybox/jquery.fancybox.pack.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.fancybox').fancybox();
+            });
+        </script>
     </body>
 </html>
